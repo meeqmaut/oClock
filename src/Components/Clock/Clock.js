@@ -32,7 +32,7 @@ class Clock extends React.Component {
         return (
         <div className="clock">
             <h1>oClock</h1>
-            <h3>{ moment(this.state.date.toLocaleString()).format('MMMM DD, YYYY, h:mm:ss')}</h3>
+            <h3>{ moment(this.state.date.toLocaleString()).format('MMMM DD, YYYY h:mm:ss')}</h3>
         </div>
         );
     }
