@@ -1,0 +1,16 @@
+.forTask{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.result {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+.result p:first-child {
+    font-weight: bold;
+  }
