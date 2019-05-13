@@ -1,13 +1,15 @@
 .forTask{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
+    max-width: 25%;
   }
   
 .result {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
   }
 
