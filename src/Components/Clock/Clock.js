@@ -31,7 +31,7 @@ class Clock extends React.Component {
     render () {
         return (
         <div className="clock">
-            <h1>oClock</h1>
+            <h1>TIME NOW</h1>
             <h3>{ moment(this.state.date.toLocaleString()).format('MMMM DD, YYYY h:mm:ss')}</h3>
         </div>
         );

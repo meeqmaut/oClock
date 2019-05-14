@@ -38,7 +38,7 @@ class ForTask extends React.Component {
                         <Form.Label>{this.props.taskName}</Form.Label>
                         <Form.Control type="text" value={ this.state.inputValue } onChange={ (e) => this.updateInputValue(e)}/>
                     </Form.Group>
-                    <Button variant="primary" onClick={this.showResult}>Submit</Button>
+                    <Button variant="success" onClick={this.showResult}>Get</Button>
                 </Form>
                 <br></br>
                 <Fade in={ this.state.visible }>
