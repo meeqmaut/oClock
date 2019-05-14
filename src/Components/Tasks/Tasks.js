@@ -1,4 +1,4 @@
-const reverseNumber = (n) => {
+export const reverseNumber = (n) => {
     if ( !isNaN(n) ) {
       return Math.sign(n) * parseInt(n.toString().split('').reverse().join(''));
     }
@@ -7,7 +7,7 @@ const reverseNumber = (n) => {
 }
 
 
-const stringCombinations = (string) => {
+export const stringCombinations = (string) => {
     let result = [];
 
     for ( let currentIndex = 0; currentIndex < string.length; currentIndex++ ) {
@@ -25,7 +25,7 @@ const stringCombinations = (string) => {
 }
 
 
-const secondGreatestAndLowest = (numbers) => {
+export const secondGreatestAndLowest = (numbers) => {
     if ( !isNaN(numbers) ){
       const sortedArrayOfNumbers = numbers.split('').sort();
       const arrayOfUniqueNumbers = [];
@@ -45,7 +45,7 @@ const secondGreatestAndLowest = (numbers) => {
     
 }
 
-const findTheFirstUniqueCharacter = (string) => {
+export const findTheFirstUniqueCharacter = (string) => {
     const arrayOfCharacters = string.split('');
     let result;
 
@@ -61,4 +61,4 @@ const findTheFirstUniqueCharacter = (string) => {
     return result;
 }
 
-  export { reverseNumber, stringCombinations, secondGreatestAndLowest, findTheFirstUniqueCharacter };
+  export * from './Tasks.js';
