@@ -2,6 +2,7 @@ import React from 'react';
 import './TaskElement.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Fade from 'react-bootstrap/Fade';
 
 
 
@@ -30,12 +31,6 @@ class ForTask extends React.Component {
     }
 
     render () {
-        const result = this.state.visible ? <div className="result">
-                                                <p>Result:</p>
-                                                <p>{ this.state.result }</p>
-                                            </div>
-                                            : '';
-                                            
         return (
             <div className="forTask">
                 <Form>
@@ -46,7 +41,12 @@ class ForTask extends React.Component {
                     <Button variant="primary" onClick={this.showResult}>Submit</Button>
                 </Form>
                 <br></br>
-                {result}
+                <Fade in={ this.state.visible }>
+                    <div className="result">
+                        <p>Result:</p>
+                        <p>{ this.state.result }</p>
+                    </div>
+                </Fade>
             </div>
         )
     }
