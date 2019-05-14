@@ -1,5 +1,5 @@
 import React from 'react';
-import './ForTask.css';
+import './TaskElement.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
